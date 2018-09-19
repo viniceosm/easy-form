@@ -33,7 +33,7 @@ model.create(fields, function (err, usuario) {
 Com a lib só precisará passar os atributos da coleção que você irá utilizar
 
 ```javascript
-model.create(esyform.get('nome_usuario senha', req.body), function (err, usuario) {
+model.create(esyform.get(req.body, `nome_usuario senha`), function (err, usuario) {
   if (err) throw err
   console.log(usuario)
 });
