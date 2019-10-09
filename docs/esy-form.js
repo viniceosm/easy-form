@@ -1,3 +1,4 @@
+// ------- codigo lib nodejs ----------
 const esyform = {
 	get(reqBody, strCampos) {
 		obj = {}
@@ -25,7 +26,9 @@ const esyform = {
 
 	}
 }
+// ---------------------------------
 
+// --- exemplo controller mongoose
 const cUsuarios = {
 	adiciona(obj) {
 		console.log('Usuario adicionado: ', obj)

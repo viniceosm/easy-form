@@ -1,6 +1,6 @@
-# esy-form-simoor
+# esy-form
 
-Esta lib tem o objetivo de facilitar a interaÁ„o com mongodb, por exemplo, temos uma coleÁ„o `usuario`
+Esta lib tem o objetivo de facilitar a intera√ß√£o com mongodb, por exemplo, temos uma cole√ß√£o `usuario`
 
 ```javascript
 {
@@ -9,14 +9,14 @@ Esta lib tem o objetivo de facilitar a interaÁ„o com mongodb, por exemplo, temos
 }
 ```
 
-O formulario recebido ser·:
+O formulario recebido ser√°:
 
 ```javascript
 txtNomeUsuario: 'vinicius',
 txtSenha: 'christopher'
 ```
 
-Na gravaÁ„o n„o precisar· fazer
+Na grava√ß√£o n√£o precisar√° fazer
 
 ```javascript
 let fields = {
@@ -30,7 +30,7 @@ model.create(fields, function (err, usuario) {
 });
 ```
 
-Com a lib sÛ precisar· passar os atributos da coleÁ„o que vocÍ ir· utilizar
+Com a lib s√≥ precisar√° passar os atributos da cole√ß√£o que voc√™ ir√° utilizar
 
 ```javascript
 model.create(esyform.get(req.body, `nome_usuario senha`), function (err, usuario) {
@@ -39,9 +39,9 @@ model.create(esyform.get(req.body, `nome_usuario senha`), function (err, usuario
 });
 ```
 
-## Padr„o
+## Padr√£o
 
-Para criar os campos HTML dever· ser usado um padr„o
+Para criar os campos HTML dever√° ser usado um padr√£o
 
 | atributo bd | campo HTML
 |-------------|------------
